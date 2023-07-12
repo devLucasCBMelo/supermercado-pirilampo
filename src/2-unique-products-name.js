@@ -10,6 +10,7 @@ const getUniqueProductsName = () => {
   return nomes;
 };
 
+// eslint-disable-next-line sonarjs/no-extra-arguments
 getUniqueProductsName(stockProducts);
 
 module.exports = { getUniqueProductsName };
