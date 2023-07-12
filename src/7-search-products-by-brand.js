@@ -4,7 +4,6 @@ const searchProductsByBrand = (marca) => {
   let produtos = [];
   for (let index = 0; index < stockProducts.length; index += 1) {
     if (stockProducts[index].brand === marca) {
-
       let mesmaMarca = {
         description: stockProducts[index].description,
         formattedPrice: `R$ ${stockProducts[index].price.toFixed(2)}`,
