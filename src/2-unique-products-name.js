@@ -10,6 +10,6 @@ const getUniqueProductsName = () => {
   return nomes;
 };
 
-console.log(getUniqueProductsName(stockProducts));
+getUniqueProductsName(stockProducts);
 
 module.exports = { getUniqueProductsName };
