@@ -6,7 +6,6 @@ const getUniqueProductsAmount = () => {
   total = stockProducts.length;
 
   return total;
-
 };
 
 getUniqueProductsAmount(stockProducts);
