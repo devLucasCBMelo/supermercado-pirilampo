@@ -5,7 +5,7 @@ const getProductsWithAllergyOrIntoleranceInfo = () => {
   let alergias = [];
   for (let index = 0; index < stockProducts.length; index += 1) {
     if (stockProducts[index].allergyOrIntolerance !== undefined) {
-      const alergOuInto = stockProducts[index].allergyOrIntolerance.join(" ");
+      const alergOuInto = stockProducts[index].allergyOrIntolerance.join(' ');
       let itemAlergico = {
         description: stockProducts[index].description,
         formattedPrice: `R$ ${stockProducts[index].price.toFixed(2)}`,
@@ -17,5 +17,5 @@ const getProductsWithAllergyOrIntoleranceInfo = () => {
   return alergias;
 };
 
-getProductsWithAllergyOrIntoleranceInfo(stockProducts);
+getProductsWithAllergyOrIntoleranceInfo();
 module.exports = { getProductsWithAllergyOrIntoleranceInfo };

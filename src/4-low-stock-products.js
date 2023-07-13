@@ -4,14 +4,14 @@ const getLowStockProducts = () => {
   // Desenvolva seu código dentro dessa função...
   let baixoEstoque = [];
   for (index = 0; index < stockProducts.length; index += 1) {
+    let estoque = stockProducts[index];
     if (stockProducts[index].quantityInStock > 0 && stockProducts[index].quantityInStock <= 10) {
-
-      baixoEstoque.push(`${stockProducts[index].productName}: ${stockProducts[index].quantityInStock} unidades`);
+      baixoEstoque.push(`${estoque.productName}: ${estoque.quantityInStock} unidades`);
     }
   }
   return baixoEstoque;
 };
 
-getLowStockProducts(stockProducts);
+getLowStockProducts();
 
 module.exports = { getLowStockProducts };

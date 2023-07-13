@@ -11,6 +11,6 @@ const getOutOfStockProducts = () => {
   return semEstoque;
 };
 
-getOutOfStockProducts(stockProducts);
+getOutOfStockProducts();
 
 module.exports = { getOutOfStockProducts };

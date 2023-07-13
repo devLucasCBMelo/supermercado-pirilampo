@@ -8,6 +8,6 @@ const getUniqueProductsAmount = () => {
   return total;
 };
 
-getUniqueProductsAmount(stockProducts);
+getUniqueProductsAmount();
 
 module.exports = { getUniqueProductsAmount };

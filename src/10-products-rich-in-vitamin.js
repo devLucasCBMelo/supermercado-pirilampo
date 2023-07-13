@@ -11,7 +11,7 @@ const getProductsRichInVitamin = () => {
         formattedPrice: `R$ ${stockProducts[index].price.toFixed(2)}`,
         vitaminsInformation: modifyFormat,
       };
-    richVit.push(obj);
+      richVit.push(obj);
     }
   }
   return richVit;

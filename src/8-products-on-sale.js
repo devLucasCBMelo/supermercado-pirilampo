@@ -19,6 +19,6 @@ const getProductsOnSale = () => {
   return promotionItens;
 };
 
-getProductsOnSale(stockProducts);
+getProductsOnSale();
 
 module.exports = { getProductsOnSale };

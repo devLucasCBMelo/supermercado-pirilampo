@@ -9,6 +9,6 @@ const getProductsAmount = () => {
   return totalEstoque;
 };
 
-getProductsAmount(stockProducts);
+getProductsAmount();
 
 module.exports = { getProductsAmount };
